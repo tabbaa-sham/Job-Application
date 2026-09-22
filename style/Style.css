@@ -1392,14 +1392,19 @@ body::after {
 }
 
 .agency-logos {
-    gap: 12px;
+    width: 100%;
+    gap: 6px;
     flex-wrap: wrap;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .agency-logos img {
-    max-width: 75px;
-    max-height: 38px;
+    width: auto;
+    max-width: 65px;
+    max-height: 32px;
+    object-fit: contain;
+    flex-shrink: 1;
 }
 
     .footer-contact {
