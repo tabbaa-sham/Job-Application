@@ -1,0 +1,947 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Career Application</title>
+
+    <link rel="stylesheet" href="style\Style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/css/intlTelInput.css">
+</head>
+
+<body>
+
+    <main class="application-container">
+
+        <header class="application-header">
+
+            <div class="company-logo">
+                <img src="image\Malek Travel logo.png" alt="Company Logo">
+            </div>
+
+            <h1>Career Application</h1>
+
+            <p>Join our team</p>
+
+        </header>
+
+
+        <form id="jobApplicationForm">
+
+
+
+            <section class="form-section">
+
+                <h2>Personal Information</h2>
+
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                </div>
+
+
+                <!-- Father's & Mother's Name -->
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="fatherName">Father's Name</label>
+
+                        <input type="text" id="fatherName" name="fatherName" placeholder="Enter father's name">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="motherName">Mother's Name</label>
+
+                        <input type="text" id="motherName" name="motherName" placeholder="Enter mother's name">
+                    </div>
+
+                </div>
+
+
+                <!-- Phone & Email -->
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="phone">Phone Number *</label>
+
+                        <div class="phone-input">
+                            <input type="tel" id="phone" name="phone" placeholder="964 880 062" inputmode="numeric"
+                                required>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">Email Address *</label>
+
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Nationality & National Number -->
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="nationality">Nationality</label>
+
+                        <input type="text" id="nationality" name="nationality" placeholder="Enter your nationality">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="nationalNumber">National Number</label>
+
+                        <input type="text" id="nationalNumber" name="nationalNumber"
+                            placeholder="Enter your national number" inputmode="numeric">
+
+                    </div>
+
+                </div>
+
+
+                <!-- Date & Place of Birth -->
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="dateOfBirth">Date of Birth</label>
+
+                        <input type="date" id="dateOfBirth" name="dateOfBirth">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="placeOfBirth">Place of Birth</label>
+
+                        <input type="text" id="placeOfBirth" name="placeOfBirth" placeholder="City / Country">
+
+                    </div>
+
+                </div>
+
+
+                <!-- Gender & Marital Status -->
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="gender">Gender</label>
+
+                        <select id="gender" name="gender">
+
+                            <option value="">Select</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="maritalStatus">Marital Status</label>
+
+                        <select id="maritalStatus" name="maritalStatus">
+
+                            <option value="">Select</option>
+                            <option value="single">Single</option>
+                            <option value="married">Married</option>
+                            <option value="divorced">Divorced</option>
+                            <option value="widowed">Widowed</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Residential Address -->
+                <div class="form-group">
+
+                    <label for="address">Residential Address</label>
+
+                    <input type="text" id="address" name="address" placeholder="Enter your residential address">
+
+                </div>
+
+
+                <!-- Relatives in Company -->
+                <div class="form-group">
+
+                    <label>
+                        Do you have any relatives working at the company?
+                    </label>
+
+                    <div class="radio-group">
+
+                        <label>
+                            <input type="radio" id="relativeYes" name="hasRelatives" value="yes">
+                            Yes
+                        </label>
+
+                        <label>
+                            <input type="radio" id="relativeNo" name="hasRelatives" value="no">
+                            No
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Relative Details -->
+                <div class="form-group" id="relativeDetails" style="display: none;">
+
+                    <label for="relativeName">
+                        Relative's Name & Position
+                    </label>
+
+                    <input type="text" id="relativeName" name="relativeName"
+                        placeholder="Name and position of your relative">
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ============================= -->
+            <!-- 2. Job Information -->
+            <!-- ============================= -->
+
+            <section class="form-section">
+
+                <h2>Job Information</h2>
+
+
+                <div class="form-group">
+
+                    <label for="position">Position Applied For *</label>
+
+                    <select id="position" name="position" required>
+
+                        <option value="">Select a position</option>
+
+                        <option value="reservation-agent">
+                            Reservation Agent
+                        </option>
+
+                        <option value="customer-service">
+                            Customer Service
+                        </option>
+
+                        <option value="sales">
+                            Sales
+                        </option>
+
+                        <option value="accountant">
+                            Accountant
+                        </option>
+
+                        <option value="administration">
+                            Administration
+                        </option>
+
+                        <option value="it">
+                            IT
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="employmentType">
+                            Employment Type
+                        </label>
+
+                        <select id="employmentType" name="employmentType">
+
+                            <option value="">Select</option>
+
+                            <option value="full-time">
+                                Full Time
+                            </option>
+
+                            <option value="part-time">
+                                Part Time
+                            </option>
+
+                            <option value="internship">
+                                Internship
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="availability">
+                            Availability
+                        </label>
+
+                        <select id="availability" name="availability">
+
+                            <option value="">Select</option>
+
+                            <option value="immediately">
+                                Immediately
+                            </option>
+
+                            <option value="within-two-weeks">
+                                Within 2 Weeks
+                            </option>
+
+                            <option value="within-month">
+                                Within 1 Month
+                            </option>
+
+                            <option value="more-than-month">
+                                More than 1 Month
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ============================= -->
+            <!-- 3. Education -->
+            <!-- ============================= -->
+
+            <section class="form-section">
+
+                <h2>Education</h2>
+
+                <div id="educationContainer">
+
+                    <!-- Education Item -->
+                    <div class="repeatable-item education-item">
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label>Highest Level of Education</label>
+
+                                <select name="educationLevel[]">
+
+                                    <option value="">Select</option>
+
+                                    <option value="high-school">
+                                        High School
+                                    </option>
+
+                                    <option value="diploma">
+                                        Diploma
+                                    </option>
+
+                                    <option value="bachelor">
+                                        Bachelor's Degree
+                                    </option>
+
+                                    <option value="master">
+                                        Master's Degree
+                                    </option>
+
+                                    <option value="phd">
+                                        PhD
+                                    </option>
+
+                                    <option value="other">
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label>University / Institution</label>
+
+                                <input type="text" name="university[]" placeholder="University or institution">
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label>Major / Specialization</label>
+
+                                <input type="text" name="major[]" placeholder="Your specialization">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label>Graduation Year</label>
+
+                                <input type="number" name="graduationYear[]" min="1950" max="2100" placeholder="YYYY">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button type="button" class="add-item-button" id="addEducation">
+                    + Add Another Education
+                </button>
+
+            </section>
+
+
+            <!-- ============================= -->
+            <!-- 3. Training & Courses -->
+            <!-- ============================= -->
+
+            <section class="form-section">
+
+                <h2>Training & Courses</h2>
+
+                <div id="coursesContainer">
+
+                    <!-- Course Item -->
+                    <div class="repeatable-item course-item">
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label>Course Name</label>
+
+                                <input type="text" name="courseName[]" placeholder="Course name">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label>Training Provider</label>
+
+                                <input type="text" name="courseProvider[]" placeholder="Training center / institution">
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label>Year</label>
+
+                                <input type="number" name="courseYear[]" min="1950" max="2100" placeholder="YYYY">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label>Duration</label>
+
+                                <input type="text" name="courseDuration[]" placeholder="Example: 40 hours">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button type="button" class="add-item-button" id="addCourse">
+                    + Add Another Course
+                </button>
+
+            </section>
+            <!-- ============================= -->
+            <!-- 4. Work Experience -->
+            <!-- ============================= -->
+
+            <section class="form-section">
+
+                <h2>Work Experience</h2>
+
+                <div id="experienceContainer">
+
+                    <!-- Experience Item -->
+                    <div class="repeatable-item experience-item">
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label>Company Name</label>
+
+                                <input type="text" name="companyName[]" placeholder="Company name">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label>Position / Job Title</label>
+
+                                <input type="text" name="jobTitle[]" placeholder="Job title">
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label>Start Date</label>
+
+                                <input type="date" name="workStartDate[]">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label>End Date</label>
+
+                                <input type="date" name="workEndDate[]">
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Experience Details</label>
+
+                            <textarea name="experienceDetails[]" rows="5"
+                                placeholder="Briefly describe your responsibilities and experience"></textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button type="button" class="add-item-button" id="addExperience">
+                    + Add Another Work Experience
+                </button>
+
+            </section>
+
+            <!-- ============================= -->
+            <!-- 5. Languages -->
+            <!-- ============================= -->
+
+            <section class="form-section">
+
+                <h2>Languages</h2>
+
+                <div id="languagesContainer">
+
+                    <!-- Language Item -->
+                    <div class="repeatable-item language-item">
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label>Language</label>
+
+                                <input type="text" name="language[]" placeholder="Example: English">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label>Level</label>
+
+                                <select name="languageLevel[]">
+
+                                    <option value="">
+                                        Select level
+                                    </option>
+
+                                    <option value="native">
+                                        Native
+                                    </option>
+
+                                    <option value="fluent">
+                                        Fluent
+                                    </option>
+
+                                    <option value="advanced">
+                                        Advanced
+                                    </option>
+
+                                    <option value="intermediate">
+                                        Intermediate
+                                    </option>
+
+                                    <option value="basic">
+                                        Basic
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button type="button" class="add-item-button" id="addLanguage">
+                    + Add Another Language
+                </button>
+
+            </section>
+            <section class="form-section">
+
+                <h2>Computer Skills & Programs</h2>
+
+                <div id="computerSkillsContainer">
+
+                    <!-- Computer Skill Item -->
+                    <div class="repeatable-item computer-skill-item">
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label>Program / Software</label>
+
+                                <input type="text" name="computerProgram[]" placeholder="Example: Microsoft Excel">
+
+                            </div>
+
+
+
+
+
+                            <div class="form-group">
+
+                                <label>Level</label>
+
+                                <select name="computerProgramLevel[]">
+
+                                    <option value="">
+                                        Select level
+                                    </option>
+
+                                    <option value="expert">
+                                        Expert
+                                    </option>
+
+                                    <option value="advanced">
+                                        Advanced
+                                    </option>
+
+                                    <option value="intermediate">
+                                        Intermediate
+                                    </option>
+
+                                    <option value="basic">
+                                        Basic
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button type="button" class="add-item-button" id="addComputerSkill">
+                    + Add Another Program
+                </button>
+
+            </section>
+
+
+
+
+
+
+            <section class="form-section">
+
+                <h2>Skills</h2>
+
+                <div id="skillsContainer">
+
+                    <div class="skill-item">
+                        <input type="text" name="skills[]" placeholder="Enter a skill">
+                    </div>
+
+                </div>
+
+                <button type="button" class="add-item-button" id="addSkill">
+                    + Add Another Skill
+                </button>
+
+            </section>
+
+            <!-- 6. Online Profiles -->
+            <section class="form-section">
+                <h2>Online Profiles</h2>
+                <div class="form-group"> <label for="linkedin">
+                        LinkedIn Profile</label> <input type="url" id="linkedin" name="linkedin"
+                       placeholder="https://linkedin.com/in/..."> </div>
+                <div class="form-group"><label for="portfolio"> Portfolio / Website </label> <input type="url"
+                        id="portfolio" name="portfolio" placeholder="https://..."> </div>
+            </section>
+            <!-- 7. Documents -->
+            <section class="form-section">
+                <h2>Documents</h2>
+                <div class="form-group"><label for="cv"> CV / Resume
+                    </label> <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx"> <small> Accepted
+                        formats: PDF, DOC, DOCX </small></div>
+            </section>
+
+
+
+
+            <!-- ============================= -->
+            <!-- 8. Additional Information -->
+            <!-- ============================= -->
+
+            <section class="form-section">
+
+                <h2>Additional Information</h2>
+
+
+                <div class="form-group">
+
+                    <label for="howDidYouHear">
+                        How did you hear about us?
+                    </label>
+
+                    <select id="howDidYouHear" name="howDidYouHear">
+
+                        <option value="">Select</option>
+
+                        <option value="company-website">
+                            Company Website
+                        </option>
+
+                        <option value="linkedin">
+                            LinkedIn
+                        </option>
+
+                        <option value="social-media">
+                            Social Media
+                        </option>
+
+                        <option value="referral">
+                            Employee Referral
+                        </option>
+
+                        <option value="job-platform">
+                            Job Platform
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="additionalNotes">
+                        Additional Notes
+                    </label>
+
+                    <textarea id="additionalNotes" name="additionalNotes" rows="5"
+                        placeholder="Anything else you would like us to know?"></textarea>
+
+                </div>
+
+            </section>
+
+
+
+            <section class="form-section">
+
+                <div class="form-checkbox">
+
+                    <input type="checkbox" id="confirmation" name="confirmation" required>
+
+                    <label for="confirmation">
+                        I confirm that the information provided in this
+                        application is accurate and complete.
+                    </label>
+
+                </div>
+
+            </section>
+
+
+
+            <div class="form-actions">
+
+                <button type="submit" id="submitButton">
+                    Submit Application
+                </button>
+                <div id="successModal" class="success-modal">
+
+    <div class="success-modal-content">
+
+        <button
+            type="button"
+            id="closeSuccessModal"
+            class="success-close"
+            aria-label="Close"
+        >
+            &times;
+        </button>
+
+        <div class="success-icon">
+            ✓
+        </div>
+
+        <h2>Application Submitted</h2>
+
+        <p>
+            Thank you for applying to Malek Travel & Tourism.
+            Your application has been received successfully.
+        </p>
+
+        <p class="success-note">
+            Our team will review your application and contact you
+            if your qualifications match an available opportunity.
+        </p>
+
+        <button
+            type="button"
+            id="successDoneButton"
+            class="success-done-button"
+        >
+            Done
+        </button>
+
+    </div>
+
+</div>
+
+            </div>
+
+
+        </form>
+
+    </main>
+    <footer class="application-footer">
+
+        <!-- Company Logo -->
+        <div class="footer-company">
+            <img src="image\Malek Travel logo.png" alt="Malek Travel & Tourism">
+        </div>
+
+
+        <!-- Partners & Platforms -->
+        <div class="agency-logos">
+
+            <img src="image\flynas.png" alt="Flynas">
+
+            <img src="image\souq-safar-logo.png" alt="Souq Safar">
+
+            <img src="image\flycham.png" alt="FlyCham">
+
+        </div>
+
+
+        <!-- Contact Information -->
+        <div class="footer-contact">
+
+            <a href="tel:+963964880060" class="contact-link">
+                <img src="image\tel-icon.png" alt="Phone" class="contact-icon">
+                <span>+963 11 9364</span>
+            </a>
+
+            <a href="#" class="contact-link">
+                <img src="image\whats-icon.png" alt="WhatsApp" class="contact-icon">
+                <span>+963 964 880 062</span>
+            </a>
+
+            <a href="mailto:info@malektravel.com" class="contact-link">
+                <img src="image\email-icon.png" alt="Email" class="contact-icon">
+                <span>sy@malektravel.com</span>
+            </a>
+
+            <a href="#" class="contact-link">
+                <img src="image\location-icon.png" alt="Location" class="contact-icon">
+                <span>Horse Square, Adnan Almalki St. Damascus, Syria</span>
+            </a>
+
+        </div>
+
+    </footer>
+
+    <!-- JavaScript -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/intlTelInput.min.js"></script>
+
+
+    <script src="js\script.js"></script>
+
+</body>
+
+</html>
