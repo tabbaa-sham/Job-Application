@@ -1275,13 +1275,12 @@ body::after {
 
 
     .application-footer {
-
-        width: 100%;
-
-        padding: 38px 20px 30px;
-
-        gap: 23px;
-    }
+    width: 100%;
+    box-sizing: border-box;
+    padding: 38px 20px 30px;
+    gap: 23px;
+    text-align: center;
+}
 
 
     .footer-contact {
